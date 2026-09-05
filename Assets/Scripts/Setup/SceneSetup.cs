@@ -4,6 +4,10 @@ using RTS.Camera;
 using RTS.UI;
 using RTS.World;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 namespace RTS.Setup
 {
     /// <summary>
@@ -11,6 +15,7 @@ namespace RTS.Setup
     /// </summary>
     public class SceneSetup : MonoBehaviour
     {
+#if UNITY_EDITOR
         [MenuItem("RTS/Setup Game Scene")]
         public static void SetupGameScene()
         {
@@ -52,5 +57,6 @@ namespace RTS.Setup
             Debug.Log("═══════════════════════════════════════");
             Debug.Log("Press Play to generate the map!");
         }
+#endif
     }
 }
