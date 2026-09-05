@@ -1,5 +1,6 @@
 using UnityEngine;
 using RTS.Resources;
+using RTS.Camera;
 
 namespace RTS.World
 {
@@ -48,7 +49,7 @@ namespace RTS.World
             // Setup camera bounds
             if (mapGenerator != null)
             {
-                RTSCamera camera = FindObjectOfType<RTSCamera>();
+                RTSCamera camera = Object.FindAnyObjectByType<RTSCamera>();
                 if (camera != null)
                 {
                     Vector3 mapSize = mapGenerator.MapSize;
