@@ -13,7 +13,6 @@ namespace RTS.World
         [SerializeField] private float tileSize = 1f;
 
         [Header("Noise Settings")]
-        [SerializeField] private float heightScale = 30f;
         [SerializeField] private float heightOffset = 0.5f;
         [SerializeField] private float heightFrequency = 0.1f;
         [SerializeField] private float moistureFrequency = 0.05f;
